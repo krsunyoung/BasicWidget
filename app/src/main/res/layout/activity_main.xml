@@ -13,7 +13,45 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textSize="42sp"
+        android:textColor="#0ab3f0"
+        android:background="#af20fab8"
+        android:text="Hello World!"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        android:padding="10dp"
+        android:layout_margin="20dp"/>
     <!--Wrap_content content에 딱맞게 크기를 잡겠다
-        fill-parent 부모에 맞게 잡겠다 -->
+           fill-parent 부모에 맞게 잡겠다
+           background  : #fff  || @mipmap/ic_launcher || #a020ff09 -->
+
+
+    <Button
+        android:text="INVISIBLE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_INVISIBLE"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"/>
+
+    <Button
+        android:text="GONE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_INVISIBLE"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="47dp"
+        android:id="@+id/button_gone" />
+
+    <Button
+        android:text="VISIBLE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button_gone"
+        android:layout_alignEnd="@+id/textView"
+        android:id="@+id/button_VISIBLE" />
+
+
 </RelativeLayout>
